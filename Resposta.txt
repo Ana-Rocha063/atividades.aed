@@ -1,0 +1,13 @@
+Resposta
+a) A inserção no meio do array é lenta (O(n)) porque exige o deslocamento físico 
+de todos os elementos à direita para abrir espaço. Na lista encadeada, basta 
+reorganizar dois ponteiros (O(1)), o que é muito mais eficiente em listas grandes.
+
+b) Para acessar o k-ésimo elemento, o array é muito mais rápido (O(1)) por causa do 
+acesso direto à memória. Na lista, sou obrigada a percorrer todos os nós anteriores 
+(O(n)), o que torna o acesso aleatório bem custoso.
+
+c) Sim, daria para resolver Josephus com array, mas a cada remoção teríamos que 
+deslocar os elementos para fechar o "buraco", ou usar aritmética modular para 
+simular a circularidade. No entanto, a lista circular é mais intuitiva e eficiente 
+para remoções frequentes durante o percurso.
